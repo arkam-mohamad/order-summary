@@ -51,6 +51,9 @@ p{
   gap: 20px;
   align-items: center;
 }
+h3{
+  font-size: 16px;
+}
 a{
   color: hsl(245, 75%, 52%);
   font-weight: 700;
