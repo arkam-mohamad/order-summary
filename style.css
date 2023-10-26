@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+body{
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+}
+main{
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 20px;
+  margin-top: 100px;
+}
+.image{
+  border-radius: 20px 20px 0 0;
+}
+.content{
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+p{
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+}
+.price{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 96%);
+  border-radius: 10px;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+.plan{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+a{
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+button{
+  width: 100%;
+  background-color: hsl(245, 75%, 52%);
+  border: 0;
+  padding: 15px;
+  border-radius: 10px;
+  color: hsl(225, 100%, 98%);
+}
+.cancel{
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-size: 14px;
+}
+a:hover, button:hover{
+  cursor: pointer;
+}
+a:hover{
+  color: hsla(245, 75%, 52%, 0.5);
+  text-decoration: none;
+}
+button:hover{
+  background-color: hsla(245, 75%, 52%, 0.7);
+}
+.cancel:hover{
+  color: initial;
+}
+
+@media screen and (max-width:400px) {
+  body{
+    background-image: url('./images/pattern-background-mobile.svg');
+  }
+  main{
+    width:90%;
+    margin-top: 25px;
+  }
+}
